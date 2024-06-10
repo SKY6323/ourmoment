@@ -1,0 +1,292 @@
+@charset "utf-8";
+@import url(fonts.css);
+
+/* 공통 */
+html{
+    font-family: "Pretendard Variable", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: #242224;
+    max-width: 40em;
+}
+body{
+    background: #F3E2CE;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: "Pretendard Variable", sans-serif;
+    max-width: 40em;
+}
+.wrap{
+    max-width: 40em;
+    margin: 0 auto;
+}
+
+/* main */
+.main{
+    padding: 0 4%;
+    box-sizing: border-box;
+}
+
+/* btn_menu */
+.btn_menu{width: 3rem;}
+
+/* image */
+.cont_img{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 1em;
+    background: no-repeat center/cover;
+}
+
+/* menu_area */
+.menu_area{
+    position: absolute;
+    top: 0; right: -100%;
+    width: 100%; height: 100vh;
+    padding: 0 4%; box-sizing: border-box;
+    background: #F3E2CE;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: start;
+}
+.menu_area.on{display: flex;}
+.btn_Mback{
+    display: block;
+    position: absolute;
+    top: 2em; left: 4%;
+    width: 3.5em; height: 3.5em;
+}
+.btn_Mback > img{height: 100%;}
+.btn_menu{right: 4%;}
+
+/* menu */
+.menu_area .menu{
+    width: 100%; height: 100%;
+    padding: 0 7%; box-sizing: border-box;
+}
+.menu .user{
+    width: 100%;
+    margin-top: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.user .profileImg{
+    display: block;
+    margin-bottom: 1.5em;
+    width: 12em; height: 12em;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    background: #F3B366;
+}
+.user .profileImg.on > img{
+    display: block;
+    width: 100%;
+}
+.user .profileImg > img{display: none;}
+.user > p {
+    font-size: 1.6em;
+    text-decoration: underline;
+}
+.user > p.on{
+    text-decoration: none;
+    font-family: 'iceJaram-Rg', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+/* nav */
+.menu .nav{
+    margin-top: 5em;
+    padding: 1.5rem 2rem 1rem; box-sizing: border-box;
+    background: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu .nav::before{
+    content: '';
+    position: absolute;
+    top: -2rem; left: 50%;
+    transform: translateX(-50%);
+    width: 16rem; height: 4rem;
+    background: url(../image/css/deco2.png) no-repeat center/cover;
+}
+.menu .nav > li{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    padding: 2.5rem 2.5rem; box-sizing: border-box;
+}
+.menu .nav > li+li {border-top: 1px solid rgba(36, 34, 36, 0.2);}
+.menu .nav > li > a{
+    display: inline-block;
+    color: #000;
+    font-size: 2em;
+    font-weight: 500;
+}
+.menu .nav > li > figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    margin-right: 2rem;
+}
+.menu .nav > li > figure img{height: 4rem;}
+
+/* menu footer */
+.menu > .footer{
+    position: absolute;
+    bottom: 0; left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; height: 5rem;
+    background: #D9BEA0;
+}
+.menu > .footer >p{
+    color: rgba(255,255,255,0.6);
+    font-size: 1.2em;
+}
+
+/* title_area */
+.title_area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5.5em;
+    padding: 0 4%; box-sizing: border-box;
+    position: relative;
+    background: rgba(255,255,255,0.7);
+}
+.title_area > .title{
+    display: flex;
+    align-items: center;
+}
+.title_area > .title img{
+    height: 3rem;
+    margin-right: 0.6rem;
+}
+.title_area h1{
+    font-size: 3em;
+    font-family: 'iceJaram-Rg', sans-serif;
+    font-weight: 500;
+}
+.title_area .btn_menu >img{width: 100%;}
+
+/* form_area */
+.form_area{
+    height: 85vh;
+    margin: 5% 4%;
+    padding: 6%; box-sizing: border-box;
+    border: 1px solid #D9BEA0;
+}
+.form_area h2{
+    font-family: 'iceJaram-Rg', sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 5rem;
+}
+.form_area h2::after{
+    content: '';
+    position: absolute;
+    bottom: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 130%; height: 1px;
+    background: #000;
+}
+
+/* input */
+.input_area{width: 100%;}
+input, textarea{
+    display: block;
+    margin-bottom: 2rem;
+    width: 100%; height: 5rem;
+    background: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding-left: 1.5rem; box-sizing: border-box;
+    font-family: "Pretendard Variable", sans-serif;
+    font-size: 1.6em;
+    line-height: 1.4;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+textarea{padding-top: 1.5rem;}
+input::placeholder, textarea::placeholder{
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.4);
+}
+input:hover, textarea:hover{
+    outline: 0.2rem solid rgb(36, 34, 36, 0.5);
+}
+input[type='file'] {
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+/* button */
+.btn{
+    height: 2.5em;
+    padding: 0 1.5em; box-sizing: border-box;
+    border: none;
+    border-radius: 0.3em;
+    background: #F3B366;
+    color:#fff;
+    font-weight: 500;
+    font-size: 1.8em;
+    font-family: "Pretendard Variable", sans-serif;
+}
+
+/* file */
+
+/* image */
+.image_upload{
+    display: flex;
+    margin-bottom: 2rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.image_label, .userImg{
+    width: 30%; height: 5rem;
+    line-height: 5rem;
+    background: #5D768C;
+    border: none;
+    border-radius: 0 0.5rem 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.6em;
+    font-family: "Pretendard Variable", sans-serif;
+    color:#fff;
+    font-weight: 500;
+}
+.image_upload > span{
+    display: block;
+    padding-left: 1.5rem; box-sizing: border-box;
+    width: 70%; height: 5rem;
+    background: #fff;
+    border: none;
+    border-radius: 0.5rem 0 0 0.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 5rem;
+    text-align: left;
+    font-size: 1.6em;
+    font-family: "Pretendard Variable", sans-serif;
+    font-weight: 500;
+    color: rgb(0, 0, 0, 0.4)
+}

@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+/* detail */
+.detail{
+    width: 100%; height: calc(100vh - 55px);
+    overflow: hidden;
+}
+.detail_cont{position: relative;}
+/* Dtitle_area */
+.Dtitle_area{position: relative;}
+.btn_back{
+    position: absolute;
+    top: 1.5rem; left: 4%;
+    height: 3.5rem;
+    z-index: 1;
+}
+.img_area > .cont_img{width: 100%; height: 60vh;}
+
+/* text_area */
+.text_area{
+    margin-top: -6rem;
+    padding: 0 2%; box-sizing: border-box;
+}
+.text_area .cont{
+    background: #fff;
+    height: 40vh;
+    border-radius: 2rem 2rem 0 0;
+    padding: 2rem 2rem 0; box-sizing: border-box;
+}
+
+/* cont */
+.cont .top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.top .title{
+    font-size: 2.4rem;
+    font-family: 'iceJaram-Rg', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+.top .like{height: 2.5rem;}
+.top .like > img{height: 100%;}
+
+.cont .bottom{
+    width: 100%;
+    margin-bottom: 3rem;
+    position: relative;
+}
+.bottom .content{
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1.4;
+    word-break: break-all;
+    margin-bottom: 1.5rem;
+}
+.bottom .user{
+    text-align: right;
+    font-family: 'iceJaram-Rg', sans-serif;
+    font-size: 1.6rem;
+}
+
+/* data */
+.bottom .data{
+    position: absolute;
+    bottom: -2rem; left: -6rem;
+    width: 12rem; height: 3rem;
+    z-index: 1;
+    line-height: 3rem;
+    font-family: 'iceJaram-Rg', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: right;
+    color: #fff;
+}
+.cont .data::after{
+    content: '';
+    position: absolute;
+    top: 0; left: 2rem;
+    background: url(../image/css/deco2.png) no-repeat center/cover;
+    width: 100% ;height: 3rem;
+    z-index: -1;
+}
+
+/* button */
+.detail_cont .btn_area{
+    position: absolute;
+    bottom: 6rem; right: calc(2% + 2rem);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    z-index: 1;
+}
+.detail_cont .btn_area button{
+    background: none;
+    height: 3rem;
+    padding: 0;
+    margin-left: 2rem;
+}
+.detail_cont .btn_area button > img{height: 100%;}
+
+/* modal */
+.detail_modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: 100%; height: 100vh;
+    background: rgba(36, 34, 36, 0.5);
+    z-index: 10;
+}
+.detail_modal.on{
+    display: flex;
+    opacity: 1;
+}
+.detail_modal.on .modal{display: flex;}
+.detail_modal .modal{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    width: 30rem; height: 25rem;
+    padding: 3rem 3rem; box-sizing: border-box;
+    border-radius: 0.1rem;
+    opacity: 0;
+}
+.modal > img{width: 6rem; height: 6rem;}
+.modal .text{
+    font-size: 2rem;
+    font-weight: 500;
+    color:#242224;
+}
+.modal > .btn_area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal > .btn_area .btn{
+    width: 10rem; height: 4rem;
+    padding: 0;
+    color:#fff;
+}
+.modal > .btn_area .btnDelete{background: #5D768C; margin-right: 2rem;}
+.modal > .btn_area .btn_No{background: #242224;}

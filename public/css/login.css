@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/* login_area */
+.login_area{
+    width: 100%;
+    padding: 15% 0; box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Lbtn_area */
+.Lbtn_area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.Lbtn_area #btnLogout{
+    background: #5D768C;
+    margin-right: 1.5rem;
+}
+
+/* lj_area */
+.join_area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.join_area button{
+    display: block;
+    border: none;
+    background: none;
+    width: 4rem; height: 4rem;
+    padding: 0;
+    margin-right: 2rem;
+}
+.join_area button > img{width: 100%;}
+.join_area > a{
+    display: block;
+    margin-right: 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: "Pretendard Variable", sans-serif;
+    text-decoration: underline;
+}

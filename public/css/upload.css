@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* upload */
+.upload{
+    padding: 25% 0; box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.upload > button{margin-top: 3rem;}
+
+.btn_area{display: flex;}
+#back{
+    margin-left: 2rem;
+    background: #5D768C;
+}

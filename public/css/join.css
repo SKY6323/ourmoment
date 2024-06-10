@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/* join_area */
+.join_area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10% 0 ; box-sizing: border-box;
+}
+
+/* Lbtn_area */
+.Lbtn_area{margin-top: 3rem;}
