@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+/* 500 이상 */
+/* menu_area */
+.menu_area{width: 80%;}
+
+/* menu_bg */
+.menu_bg{
+    display: none;
+    opacity: 1;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    z-index: 1;
+}
+.menu_bg.on{display: block; opacity: 1;}
+
+/* 768이상 */
+@media screen and (min-width: 768px) {
+    /* btn_menu */
+    .btn_menu{width: 4rem;}
+    
+    /* menu_area */
+    .menu_area{width: 60%;}
+    
+    /* title_area */
+    .title_area{height: 7em;}
+    .title_area > .title img{
+        height: 4rem;
+        margin-right: 1rem;
+    }
+    .title_area h1{font-size: 3.7em;}
+}
+
+/* 900이상 */
+@media screen and (min-width: 900px) {
+    /* menu_area */
+    .menu_area{width: 50%;}
+}
+
+/* 1024이상 */
+@media screen and (min-width: 1024px){
+    /* 공통 */
+    .p_hide{display: none;}
+    .m_hide{display: block;}
+    .main{
+        width: 100%;
+        margin-left: 30%;
+        padding: 0 6%;
+    }
+    button{cursor: pointer;}
+
+    /* wrap */
+    .wrap{
+        width: 100%;
+        display: flex;
+    }
+
+    /* head */
+    .head{
+        width: 30%; height: 100%;
+        position:fixed;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+        padding-top: 1rem;
+        background: rgba(255,255,255,0.7);
+    }
+
+    /* header */
+    header{width: 100%;}
+
+    /* menu_area */
+    .menu_area{
+        width: 100%;
+        position: static;
+        right: inherit;
+        display: flex;
+        padding: 0 2rem;
+        background: none;
+    }
+
+    /* menu */
+    .menu_area .menu{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 5rem;
+        padding: 0;
+    }
+    .menu .user{margin: 0;}
+    .user .profileImg{
+        width: 10em; height: 10em;
+        margin-bottom: 2em;
+    }
+    .user > p {
+        font-size: 1.8em;
+        cursor: pointer;
+    }
+
+    /* nav */
+    .menu .nav{
+        margin: 0;
+        width: 95%;
+    }
+    .menu .nav > li > a{padding: 1.5rem 1.5rem;}
+    .menu .nav > li > a > p{font-size: 1.8em;}
+
+    /* title_area */
+    .title_area{
+        position: static;
+        justify-content: center;
+        background: none;
+        width: 100%; height: 7em;
+        padding: 0 0 1rem;
+        border-bottom: 1px solid #D9BEA0;
+        cursor: pointer;
+    }
+    .title_area > .title img{height: 4rem;}
+    .title_area h1{font-size: 3.5em;}
+
+    /* footer */
+    .menu > .footer{bottom: 1rem;}
+    .menu > .footer >p{font-size: 1em;}
+
+    /* image */
+    .cont_img{margin-bottom: 2em;}
+
+    /* form_area */
+    .form_area> div{width: 70%;}
+
+    /* image */
+    .image_label, .userImg{width: 25%;}
+    .image_upload > span{width: 75%;}
+}
+
+/* 1200이상 */
+@media screen and (min-width: 1200px){
+    /* head */
+    .head{
+        padding-top: 1.5em;
+        gap: 6em;
+    }
+
+    /* title_area */
+    .title_area{padding-bottom: 1.5em;}
+
+    /* menu */
+    .menu_area .menu{gap: 8em;}
+    .user .profileImg{width: 13em; height: 13em;}
+
+
+    /* nav */
+    .menu .nav{width: 80%;}
+    .menu .nav > li > a{padding: 2rem 2rem;}
+    
+}
+
+/* 1800이상 */
+@media screen and (min-width: 1800px){
+    /* head */
+    .head{
+        width: 25%;
+        gap: 10rem;
+    }
+}

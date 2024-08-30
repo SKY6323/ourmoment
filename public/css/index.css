@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+.wrap{background: linear-gradient(#F3E2CE 80%, #f3dcc2);}
+
 /* intro */
 .index{
     display: flex;
@@ -10,4 +12,6 @@
     opacity: 0;
     overflow: hidden;
 }
-.index > img{height: 100%;}
+.index > img{
+    height: 100%;
+}

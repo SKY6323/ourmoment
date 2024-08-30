@@ -12,6 +12,7 @@ db.collection('moment').get().then((result)=>{
             <div class="title">${doc.data().title}
             <div class="like"><img src="image/css/btn_like.png" alt="좋아요"></div>
             </div>
+            <p class="content m_hide">${doc.data().content}</p>
         </div>
         `
 

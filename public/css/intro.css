@@ -3,20 +3,25 @@
 /* intro */
 .intro{
     width: 100%; height: 100vh;
+    padding-bottom: 50px; box-sizing: border-box;
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* img */
 .intro > figure{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     width: 100%;
     height: 45vh;
     margin-bottom: 5em;
     opacity: 0;
 }
-.intro > figure > img{width: 100%;}
+.intro > figure > img{height: 100%;}
 
 /* text_area */
 .intro .text_area{
@@ -39,7 +44,6 @@
 /* a */
 .intro > a{
     display: block;
-    margin: 3rem auto 0;
     width: 16rem; height: 5rem;
     background: #F3B366;
     border-radius: 10rem;

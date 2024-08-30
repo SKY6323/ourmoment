@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* 500 이상 */
+/* list_area */
+.list_area{padding: 0 4%;}
+.list_area > .list{height: 15rem;}
+
+/* 768이상 */
+@media screen and (min-width: 768px) {
+    /* user */
+    .Muser{margin-top: 6rem;}
+    .Muser .profileImg{width: 15em; height: 15em;}
+
+    /* list_area */
+    .list_area{margin-top: 6rem;}
+    .list_area > .list{height: 24rem;}
+}
+
+/* 900이상 */
+@media screen and (min-width: 900px) {
+    /* list_area */
+    .list_area > .list{height: 28rem;}
+}
+
+/* 1024이상 */
+@media screen and (min-width: 1024px) {
+    /* list_area */
+    .list_area > .list{height: 20rem;}
+}
+
+/* 1200이상 */
+@media screen and (min-width: 1200px) {
+    /* list_area */
+    .list_area > .list{height: 24rem;}
+}

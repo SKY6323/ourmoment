@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/* 500 이상 */
+/* list */
+.list .cont_img{height: 22em;}
+
+
+/* 768이상 */
+@media screen and (min-width: 768px) {
+    /* list */
+    .list{margin-bottom: 4%;}
+    .list .cont_img{height: 30em;}
+}
+
+/* 900이상 */
+@media screen and (min-width: 900px) {
+    /* list */
+    .list .cont_img{height: 35em;}
+}
+
+/* 1024이상 */
+@media screen and (min-width: 1024px) {
+
+    /* list_area */
+    .list_area{
+        flex-direction: column;
+        gap: 4%;
+    }
+
+    /* list */
+    .list{
+        width: 100%;
+        background: #fff;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        border-radius: 1px;
+        padding: 3em; box-sizing: border-box;
+        margin-bottom: 5%;
+    }
+    .list .cont_img{
+        height: 37em;
+        border-radius: 1.5rem;
+    }
+    .list .title{
+        margin-bottom: 1.5rem;
+        font-size: 3em;
+    }
+    .list .like{width: 3.2rem; height: 3rem;}
+    .list .content{
+        font-size: 1.6em;
+        font-weight: 400;
+        line-height: 1.5;
+        padding: 0 4%; box-sizing: border-box;
+        word-break: keep-all;
+    }
+}
+
+/* 1200이상 */
+@media screen and (min-width: 1200px) {
+    /* main */
+    .main{padding: 0 10%;}
+
+    /* list */
+    .list .cont_img{height: 50em;}
+}

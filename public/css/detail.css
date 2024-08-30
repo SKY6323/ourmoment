@@ -1,13 +1,21 @@
 @charset "utf-8";
 
+/* main */
+.main{
+    padding: 0;
+    height: calc(100vh - 5.5em);
+    overflow: hidden;
+}
+
 /* detail */
 .detail{
-    width: 100%; height: calc(100vh - 55px);
+    width: 100%;
     overflow: hidden;
 }
 .detail_cont{position: relative;}
+
 /* Dtitle_area */
-.Dtitle_area{position: relative;}
+.Dtitle_area{height: calc(100vh - 5.5em);}
 .btn_back{
     position: absolute;
     top: 1.5rem; left: 4%;
@@ -20,10 +28,12 @@
 .text_area{
     margin-top: -6rem;
     padding: 0 2%; box-sizing: border-box;
+    position: absolute;
+    left: 0; bottom: 0; right: 0;
 }
 .text_area .cont{
     background: #fff;
-    height: 40vh;
+    width: 100%; height: 40vh;
     border-radius: 2rem 2rem 0 0;
     padding: 2rem 2rem 0; box-sizing: border-box;
 }
@@ -66,7 +76,7 @@
 /* data */
 .bottom .data{
     position: absolute;
-    bottom: -2rem; left: -6rem;
+    bottom: -5rem; left: -6rem;
     width: 12rem; height: 3rem;
     z-index: 1;
     line-height: 3rem;

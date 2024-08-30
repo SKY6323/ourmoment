@@ -1,6 +1,10 @@
 //메뉴 열기
 $('.btn_menu').on('click', function(){
+    $('.menu_bg').addClass('on')
     $('.menu_area').addClass('on')
+    $('.menu_bg').animate({
+        opacity: '1'
+    })
     $('.menu_area').animate({
         right: '0'
     }, 500)
@@ -72,8 +76,13 @@ $('.myPage').on('click',function(e){
     e.preventDefault();
 
     if(localUser == null){
-        alert('사용자 정보가 없습니다.\n로그인 또는 회원가입 후 이용해주세요.')
+        if($(location).attr('login')){
+            alert('사용자 정보가 없습니다.\n로그인 또는 회원가입 후 이용해주세요.')
+            return false
+        }else{
+            alert('사용자 정보가 없습니다.\n로그인 또는 회원가입 후 이용해주세요.')
         window.location.href = 'login.html'
+        }
     }else{
     window.location.href = 'myMain.html'
 }

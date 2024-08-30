@@ -2,22 +2,20 @@
 @import url(fonts.css);
 
 /* 공통 */
+.m_hide{display: none;}
 html{
     font-family: "Pretendard Variable", sans-serif;
     font-size: 10px;
     font-weight: 500;
     color: #242224;
-    max-width: 40em;
 }
 body{
     background: #F3E2CE;
     font-size: 1em;
     font-weight: 500;
     font-family: "Pretendard Variable", sans-serif;
-    max-width: 40em;
 }
 .wrap{
-    max-width: 40em;
     margin: 0 auto;
 }
 
@@ -118,28 +116,26 @@ body{
     width: 16rem; height: 4rem;
     background: url(../image/css/deco2.png) no-repeat center/cover;
 }
-.menu .nav > li{
+.menu .nav > li{width: 100%;}
+.menu .nav > li+li {border-top: 1px solid rgba(36, 34, 36, 0.2);}
+.menu .nav > li > a{
+    width: 100%;
     display: flex;
     justify-content: start;
     align-items: center;
-    width: 100%;
     padding: 2.5rem 2.5rem; box-sizing: border-box;
 }
-.menu .nav > li+li {border-top: 1px solid rgba(36, 34, 36, 0.2);}
-.menu .nav > li > a{
+.menu .nav > li > a > p{
     display: inline-block;
     color: #000;
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 500;
 }
-.menu .nav > li > figure{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.menu .nav > li > a > figure{
     width: 4rem;
     margin-right: 2rem;
 }
-.menu .nav > li > figure img{height: 4rem;}
+.menu .nav > li > a > figure img{height: 4rem;}
 
 /* menu footer */
 .menu > .footer{
@@ -186,9 +182,12 @@ body{
 .form_area{
     height: 85vh;
     margin: 5% 4%;
-    padding: 6%; box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #D9BEA0;
 }
+.form_area> div{width: 80%;}
 .form_area h2{
     font-family: 'iceJaram-Rg', sans-serif;
     font-size: 4rem;

@@ -45,7 +45,9 @@ db.collection('moment').doc(queryString.get('id')).get().then((result)=> {
 
     //삭제 모달 띄우기
     $('.btnDeleteOn').on('click', function(){
-        if(userName == user.displayName){
+        if(user == null ||userName !== user.displayName ){
+            alert('글 작성자가 아닙니다.')
+        }else if(userName == user.displayName){
             $('.detail_modal').addClass('on')
             $('.detail_modal .modal').animate({
                 opacity: '1'
@@ -57,8 +59,10 @@ db.collection('moment').doc(queryString.get('id')).get().then((result)=> {
             
     //수정하기
     $('.btnModify').on('click',function(){
-        if(userName == user.displayName){
-        window.location.href = '/edit.html?id='+queryString.get('id')
+        if(user == null ||userName !== user.displayName ){
+            alert('글 작성자가 아닙니다.')
+        }else if(userName == user.displayName){
+            window.location.href = '/edit.html?id='+queryString.get('id')
         }else{
             alert('글 작성자가 아닙니다.')
         }

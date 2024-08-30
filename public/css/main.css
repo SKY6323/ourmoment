@@ -14,8 +14,7 @@
 /* list */
 .list{
     width: 46%; height: 100%;
-    margin-bottom: 3.5%;
-    border-bottom: 1px solid rgba(0,0,0,0.4);
+    margin-bottom: 6%;
 }
 .list > a{display: block;}
 .list .cont_img{
@@ -28,9 +27,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 4%; box-sizing: border-box;
-    font-size: 2.2em;
+    font-size: 2em;
     font-family: 'iceJaram-Rg', sans-serif;
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
 }
 .list .like{
     width: 2.5rem; height: 2.5rem;
